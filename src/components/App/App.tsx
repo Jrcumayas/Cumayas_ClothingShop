@@ -116,10 +116,14 @@ export const App = () => {
           <LinksWrapper>
             <Link to='/'>Home</Link>
             <Link to='/cart'>Cart</Link>
+            <Link to='/wishlist'>Wishlist</Link>
+            <Link to='/checkout'>Check out</Link>
           </LinksWrapper>
           <Routes>
             <Route path='/' element={<Products />} />
             <Route path='/cart' element={<Cart />} />
+            <Route path='/wishlist' element={<Wishlist />} />
+            <Route path='/checkout' element={<Checkout />}/>
           </Routes>
         </Wrapper>
       </WishListContext.Provider>
